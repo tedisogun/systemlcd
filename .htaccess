@@ -1,0 +1,15 @@
+Options All -Indexes
+
+ErrorDocument 403 /403.php
+ErrorDocument 404 /404.html
+
+Redirect /dashboard/config/dbconnect.php /404.html
+Redirect  /dashboard/konten/page-content.php /404.html
+Redirect  /dashboard/konten/sidebar.php /404.html
+Redirect /dashboard/konten/hapus_lcd.php /404.html
+Redirect /dashboard/konten/kembali.php /404.html
+Redirect /dashboard/konten/pinjam.php /404.html
+Redirect /dashboard/konten/tambah_lcd.php /404.html
+Redirect /dashboard/konten/tampil_lcd.php /404.html
+Redirect /dashboard/konten/tampil_mahasiswa.php /404.html
+
