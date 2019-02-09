@@ -5,7 +5,6 @@
  define('CAPTCHA_NUMCHARS',6);
  define('CAPTCHA_WIDTH',125);
  define('CAPTCHA_HEIGHT',30);
- define('ROOT_DIRECTORY','/var/www/systemlcd/');
 
  $pass_phrase = "";
 
@@ -35,7 +34,7 @@
      imagesetpixel($img, rand() % CAPTCHA_WIDTH, rand() % CAPTCHA_HEIGHT, $grapich_color );
    }
 
-   imagettftext($img, 18, 0, 5, CAPTCHA_HEIGHT - 5, $text_color,ROOT_DIRECTORY.'fontku.ttf', $pass_phrase);
+   imagettftext($img, 18, 0, 5, CAPTCHA_HEIGHT - 5, $text_color,$_SERVER['DOCUMENT_ROOT'].'/fontku.ttf', $pass_phrase);
 
    header('Content-type: image/png');
    imagepng($img);
